@@ -1,3 +1,10 @@
 An open source project for studying React Native.
 
+This is still a work in process, ideally, when it finish, we will have:
+
+- Unit test
+- UI test
+- CI/CD for both android and iOS
+
 See the source code here: https://github.com/letientai299/rn-hello-world
+
