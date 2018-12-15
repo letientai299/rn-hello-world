@@ -56,4 +56,6 @@ buck-out/
 *.jsbundle
 
 ios/Pods
+*.env*
 
+android/app/release/

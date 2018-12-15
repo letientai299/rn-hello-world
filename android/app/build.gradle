@@ -98,11 +98,11 @@ android {
   buildToolsVersion '28.0.3'
 
   defaultConfig {
-    applicationId "com.helloworld"
+    applicationId "io.letientai.rn.helloworld"
     minSdkVersion rootProject.ext.minSdkVersion
     targetSdkVersion rootProject.ext.targetSdkVersion
-    versionCode 1
-    versionName "1.0"
+    versionCode 2
+    versionName "2.0"
     ndk {
       abiFilters "armeabi-v7a", "x86"
     }
@@ -135,6 +135,7 @@ android {
   buildTypes {
     release {
       minifyEnabled enableProguardInReleaseBuilds
+      signingConfig signingConfigs.release
       proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
     }
   }
