@@ -1,4 +1,4 @@
-package com.helloworld;
+package io.letientai.rn.helloworld;
 
 import android.app.Application;
 
@@ -8,6 +8,7 @@ import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
 
+import io.letientai.rn.helloworld.BuildConfig;
 import java.util.Arrays;
 import java.util.List;
 

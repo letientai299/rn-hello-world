@@ -1,4 +1,4 @@
-package com.helloworld;
+package io.letientai.rn.helloworld;
 
 import com.facebook.react.ReactActivity;
 
