@@ -1,3 +1,4 @@
+# vim: ft=ruby
 # This file contains the fastlane.tools configuration
 # You can find the documentation at https://docs.fastlane.tools
 #
@@ -24,6 +25,7 @@ platform :android do
   desc "Submit a new Beta Build to Crashlytics Beta"
   lane :beta do
     gradle(task: "clean assembleRelease")
+    upload_to_play_store(track: 'beta')
 
     # sh "your_script.sh"
     # You can also use other beta testing services here

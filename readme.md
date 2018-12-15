@@ -3,6 +3,13 @@
 This is an extended version of `react-native init` that come with fully
 configured CI/CD.
 
+It's pretty much build on the knowledge of my other 2 similar projects, which
+are for a single platform. If you're interesting in building native application
+(not React Native), you might want to check them out:
+
+- [Android Hello World](https://github.com/letientai299/android-hello-world/)
+- [iOS Hello World](https://github.com/letientai299/ios-hello-world)
+
 ## Prerequisites
 
 - [Yarn](https://yarnpkg.com/en/) for Nodejs package management. NPM is fine, but
@@ -98,6 +105,26 @@ build:
 -rw-r--r--  1 tai.le  1032302077   9.5M Dec 14 04:15 ./android/app/build/outputs/apk/release/app-release.apk
 -rw-r--r--  1 tai.le  1032302077   234B Dec 14 04:15 ./android/app/build/outputs/apk/release/output.json
 ```
+
+## Fastlane
+
+See the document for fastlance in `android/fastlance` or `iOS/fastlance`
+folder, as there's many different between the 2 platforms. This section would
+only discuss common things.
+
+### First android release must be created manually
+
+From [here](https://github.com/fastlane/fastlane/issues/10711), I've learned
+that
+
+> Supply will not publish apps but can release updates for published ones, you
+> will need to manually release the first version then subsequent updates can be
+> released via supply.
+
+That means we will have to manual create crete our first release variants
+(Internal track, closed track and Production). It took me a quite to understand
+why `fastlance android beta` and `fastlane android deploy` run successfully
+without upload anything to Play Console.
 
 ## What else?
 
