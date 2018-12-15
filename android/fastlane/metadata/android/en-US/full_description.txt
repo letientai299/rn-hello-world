@@ -1,0 +1,2 @@
+An open source project for studying React Native. See the source code here: 
+https://github.com/letientai299/rn-hello-world

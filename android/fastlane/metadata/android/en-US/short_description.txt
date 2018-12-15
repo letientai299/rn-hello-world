@@ -1,0 +1,1 @@
+A sample react native app that come with fully configured CI/CD.
